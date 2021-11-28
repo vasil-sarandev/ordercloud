@@ -1,0 +1,6 @@
+.container > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+.productsList > div:not(:last-child) {
+  margin-bottom: 20px;
+}

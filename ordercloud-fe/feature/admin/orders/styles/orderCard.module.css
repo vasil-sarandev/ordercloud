@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  padding: 12px var(--gutter);
+  background: #fff;
+  border-radius: 5px;
+  max-width: 750px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.orderDate {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--font-secondary2);
+  display: flex;
+  justify-content: flex-end;
+  margin-right: var(--gutter);
+}
+.notComplete {
+  border-left: 4px solid var(--danger);
+}
+.container > div:not(:last-child),
+.infoContainer > div:not(:last-child) {
+  margin-right: var(--gutter);
+}
+
+.infoContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.orderIdentifier {
+  line-height: 30px;
+  width: 500px;
+  display: flex;
+}
+.info,
+.info > div {
+  font-weight: bold;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  line-height: 30px;
+  display: flex;
+}
+.actualPrice {
+  font-size: 12px;
+  color: var(--font-secondary2);
+}
+.price svg {
+  fill: var(--primary);
+  margin-right: 5px;
+}
+
+.cardIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .orderIdentifier {
+    line-height: 30px;
+    width: 300px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    flex-direction: column;
+  }
+  .orderIdentifier {
+    width: 100%;
+  }
+}

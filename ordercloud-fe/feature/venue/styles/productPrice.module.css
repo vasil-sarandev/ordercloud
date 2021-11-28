@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  position: relative;
+  font-family: var(--font-Righteous);
+}
+.major {
+  line-height: 45px;
+  font-size: 45px;
+}
+.rightPart {
+  display: flex;
+  margin-left: -2px;
+  flex-direction: column;
+}
+.minor {
+  font-size: 18px;
+  line-height: 18px;
+}
+.currency {
+  font-family: var(--font-Roboto);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 3px;
+  left: 4px;
+}

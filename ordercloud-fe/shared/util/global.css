@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;700;900&display=swap&family=Inter:wght@400;700;900&display=swap');
+
+:root {
+  --primary: #ff8000;
+  --secondary: #ff6a5d;
+  --box-shadow-bottom: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  --font: rgba(0, 0, 0, 0.87);
+  --font-secondary: #a7a7a7;
+  --font-secondary2: rgb(114, 128, 143);
+  --gray-background: #f5f8fc;
+  --border-default: 1px solid #e4e6ea99;
+  --restrict-width: 1400px;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #ff5245;
+  --light: #f5f8fc;
+  --dark: #343a40;
+  --gutter: 25px;
+  --padding: 50px;
+  --font-family-default: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-Righteous: 'Righteous', cursive;
+  --font-Roboto: 'Roboto', sans-serif;
+  --font-Inter: 'Inter', sans-serif;
+}
+
+/* reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--font);
+  font-family: var(--font-family-default);
+}
+
+/* style overwrites. mostly antd components css. */
+
+.anticon:focus {
+  outline: none !important;
+}
+.ant-drawer-body {
+  padding: 24px 10px !important;
+}
+
+.ant-checkbox:hover::after,
+.ant-checkbox-wrapper:hover .ant-checkbox::after {
+  visibility: hidden !important;
+}
+
+.ant-btn-primary {
+  background: var(--primary) !important;
+  border: none !important;
+}
+
+.ant-btn[disabled],
+.ant-btn[disabled]:hover,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:active {
+  color: rgba(0, 0, 0, 0.45);
+  background: #f5f5f5 !important;
+  border-color: #d9d9d9;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-notification {
+  z-index: 10000 !important;
+  margin-right: 0px !important;
+  top: 0px !important;
+  right: 0px !important;
+}
+
+.ant-drawer-content-wrapper {
+  max-width: 100%;
+}
+
+.ant-input {
+  font-family: var(--font-family-default);
+  height: 40px;
+}
+.ant-btn {
+  font-family: var(--font-family-default);
+  height: 40px !important;
+}
+
+.ant-spin {
+  display: block;
+}
+.ant-spin-dot-item {
+  background-color: var(--primary) !important;
+}
+.ant-upload {
+  display: block !important;
+}
+
+a {
+  color: var(--font);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--info);
+}
+
+/* DONT TOUCH. ant design shit they forgot to include. */
+
+.ant-zoom-leave {
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.ant-zoom-leave.ant-zoom-leave-active {
+  -webkit-animation-name: antZoomOut;
+  animation-name: antZoomOut;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  pointer-events: none;
+}
+
+.ant-zoom-leave {
+  -webkit-animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.ant-fade-leave {
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.ant-fade-leave.ant-fade-leave-active {
+  -webkit-animation-name: antFadeOut;
+  animation-name: antFadeOut;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  pointer-events: none;
+}
+
+.ant-fade-leave {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes antFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes antFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes antZoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+@keyframes antZoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,58 @@
+.form {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.innerForm > div {
+  flex: 1;
+}
+.innerForm .left {
+  margin-right: var(--gutter);
+}
+.innerForm {
+  display: flex;
+}
+.submit {
+  margin-top: 20px;
+}
+.additions > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.addition {
+  display: flex;
+  border-bottom: var(--border-default);
+}
+.addition > div:not(:last-child) {
+  margin-right: 10px;
+}
+.addition .additionInput {
+  flex: 1;
+}
+.additions {
+  margin-bottom: 10px;
+}
+.additionsLabel {
+  margin-bottom: 10px;
+}
+.closeIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* label height / 2 */
+  margin-top: 12.5px;
+}
+.closeIcon svg {
+  fill: var(--danger);
+}
+
+@media screen and (max-width: 768px) {
+  .innerForm {
+    flex-direction: column;
+  }
+  .additions {
+    margin-top: 10px;
+  }
+  .innerForm .left {
+    margin-right: 0px;
+  }
+}

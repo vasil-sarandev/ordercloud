@@ -1,0 +1,58 @@
+.container {
+  margin-bottom: var(--gutter);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  top: -45px;
+  margin-bottom: -40px;
+}
+.cover_desktop {
+  display: none;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.logo div {
+  border-radius: 50%;
+  box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.4);
+}
+.logo img {
+  border-radius: 50%;
+}
+.venueTitle,
+.announcement {
+  padding: 0px 10px;
+}
+.venueTitle {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary);
+}
+.announcement {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--font-secondary);
+}
+
+@media screen and (min-width: 1080px) {
+  .cover {
+    display: none !important;
+  }
+  .cover_desktop {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cover {
+    display: block;
+  }
+  .cover_desktop {
+    display: none;
+  }
+}

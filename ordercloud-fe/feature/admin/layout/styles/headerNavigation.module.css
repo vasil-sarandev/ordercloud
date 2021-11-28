@@ -1,0 +1,87 @@
+.nav-container {
+  display: flex;
+  flex: 1;
+}
+.nav-right {
+  flex: 1;
+  justify-content: flex-end;
+}
+.nav-container > div {
+  display: flex;
+}
+.nav-container > div a {
+  font-size: 14px;
+}
+.nav-container > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profileIcon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.nav-container > div > div:not(:last-child) {
+  margin-right: 32px;
+}
+/* mobile navigation */
+.outer-container-mobile {
+  position: absolute;
+  z-index: 9999;
+  top: 60px;
+  left: 0px;
+}
+.dropdownContainer {
+  padding: 20px 15px;
+  background: #fff;
+}
+.dropdownContainer > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  background: #f9f9f9;
+  height: 0px;
+  overflow: hidden;
+  width: 100vw;
+}
+.mobile-nav-link {
+  height: 60px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.005);
+  padding-left: 35px;
+}
+.mobile-container.isActive {
+  height: fit-content;
+}
+.mobile-container .mobile-nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.mobile {
+  display: none;
+}
+.burger-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9999;
+}
+@media screen and (max-width: 800px) {
+  .nav-container {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}

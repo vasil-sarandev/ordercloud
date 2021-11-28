@@ -1,0 +1,6 @@
+.listContainer {
+  margin-bottom: var(--gutter);
+}
+.listContainer > div:not(:last-child) {
+  margin-bottom: 5px;
+}

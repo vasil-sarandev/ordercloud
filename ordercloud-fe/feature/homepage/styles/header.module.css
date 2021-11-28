@@ -1,0 +1,33 @@
+.container {
+  padding: 20px 10px;
+  background: #fff;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+  box-shadow: 0 4px 20px 0 hsl(0deg 0% 60% / 20%);
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inner {
+  display: flex;
+  max-width: var(--restrict-width);
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.inner > div:first-child {
+  margin-right: var(--gutter);
+}
+.buttons {
+  display: flex;
+}
+.buttons > div:first-child {
+  margin-right: var(--gutter);
+}
+@media screen and (max-width: 768px) {
+  .buttons > div:first-child {
+    margin-right: 5px;
+  }
+}

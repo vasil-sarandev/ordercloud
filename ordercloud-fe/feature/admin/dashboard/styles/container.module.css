@@ -1,0 +1,36 @@
+.cardContainer {
+  display: flex;
+}
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 40px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardHeader {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--primary);
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+.link a {
+  color: var(--info);
+  font-size: 12px;
+}
+.cardContainer > div:not(:last-child) {
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+  .cardContainer > div:not(:last-child) {
+    margin-right: unset;
+    margin-bottom: var(--gutter);
+  }
+}

@@ -1,0 +1,39 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.inputHelp {
+  margin-bottom: 10px;
+  color: var(--font-secondary);
+  font-size: 12px;
+}
+.inputError {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.stepsContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.cropContainer {
+  height: 500px;
+}
+.logo {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.heading {
+  margin: var(--gutter) 0px;
+  text-align: center;
+  color: var(--primary);
+}
+.informationWrapper,
+.personalizationWrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}

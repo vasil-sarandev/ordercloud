@@ -1,0 +1,85 @@
+.productWrapper {
+  position: relative;
+  padding: 40px 10px;
+  margin: 0px 10px 20px 10px;
+  box-shadow: 0.1rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+.inner {
+  display: flex;
+}
+.productWrapper .left {
+  flex: 1;
+  max-width: 120px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.productWrapper .left .productPrice {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: var(--font-Righteous);
+}
+.productWrapper .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.productWrapper .right .top {
+  flex: 1;
+}
+.additions {
+  margin-bottom: var(--gutter);
+}
+.additions > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+.addition {
+  display: flex;
+  justify-content: flex-end;
+}
+.additionLabel {
+  line-height: 18px;
+  font-size: 14px;
+  margin-top: 2px;
+  color: var(--font-secondary2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 8px;
+}
+.title {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 16px;
+  text-align: right;
+}
+.title,
+.description {
+  /* padding-right: 15px; */
+}
+.title h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.quantity {
+  position: absolute;
+  font-family: var(--font-Righteous);
+  color: var(--font-secondary2);
+  top: 10px;
+  right: 10px;
+  font-size: 0.8em;
+}
+.description {
+  text-align: right;
+  font-size: 13px;
+  color: var(--font-secondary);
+  max-width: 80%;
+  margin-left: auto;
+}
+.cartBtn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}

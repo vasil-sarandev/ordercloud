@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  padding: 12px var(--gutter);
+  background: #fff;
+  border-radius: 5px;
+  max-width: 750px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.left {
+  line-height: 40px;
+  width: 500px;
+  display: flex;
+}
+
+.name {
+  font-weight: bold;
+  margin-left: 5px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .right {
+    justify-content: flex-start;
+  }
+}

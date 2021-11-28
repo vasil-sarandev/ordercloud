@@ -1,0 +1,19 @@
+.wrapper {
+  margin-top: var(--gutter);
+}
+.btn {
+  margin-top: 10px;
+}
+.goBack {
+  display: inline-flex;
+  cursor: pointer;
+  color: var(--font-secondary);
+  line-height: 18px;
+  margin-bottom: var(--gutter);
+}
+.goBack svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--primary);
+  margin-right: 5px;
+}

@@ -1,0 +1,27 @@
+.titleContainer {
+  padding: 20px 10px;
+  text-align: center;
+}
+.boxes {
+  display: flex;
+}
+.boxes > div {
+  flex-basis: 33%;
+}
+.boxes > div:not(:last-child) {
+  margin-right: 32px;
+}
+@media screen and (max-width: 850px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .boxes > div {
+    max-width: 50%;
+    margin: 0 auto 24px auto !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .boxes > div {
+    max-width: unset;
+  }
+}

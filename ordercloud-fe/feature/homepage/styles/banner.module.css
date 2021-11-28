@@ -1,0 +1,39 @@
+.container {
+  background-color: #146eb4;
+  padding: 30px 10px;
+  color: #fff;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature {
+  display: flex;
+  justify-content: center;
+}
+.feature .title {
+  margin-left: 5px;
+  line-height: 30px;
+}
+.feature svg {
+  width: 30px;
+  height: 30px;
+}
+.features > div:not(:last-child) {
+  margin-right: var(--gutter);
+}
+
+@media screen and (max-width: 1200px) {
+  .features {
+    flex-direction: column;
+  }
+  .features > div:not(:last-child) {
+    margin-bottom: var(--gutter) !important;
+  }
+  .feature {
+    width: 280px;
+    margin: 0 auto !important;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+  flex: 1;
+}
+.containerInner {
+  display: flex;
+}
+.cartDesktop,
+.navigationDesktop {
+  flex: 1;
+}

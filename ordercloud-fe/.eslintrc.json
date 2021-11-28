@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb", "prettier", "plugin:import/typescript"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/react-in-jsx-scope": 0,
+    "no-trailing-spaces": 1,
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "no-console": ["warn"],
+    "no-undef": "error",
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "no-shadow": "off", // replaced by ts-eslint rule below
+    "@typescript-eslint/no-shadow": "error",
+    "no-unused-vars": "off", // replaced by ts-eslint rule below.
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "_" }],
+    "import/no-cycle": "off", // weird errors that are not correct. probably because of create-typescript-index.
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }]
+
+    // "no-restricted-syntax": [
+    //   "error",
+    //   {
+    //     "selector": "SequenceExpression",
+    //     "message": "The comma operator is confusing and a common mistake. Don’t use it!"
+    //   }
+    // ],
+    // "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": false }]
+  }
+}

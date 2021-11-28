@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.digits {
+  font-size: 48px;
+  color: #bbc5d5;
+  line-height: 48px;
+  height: 48px;
+}
+.description {
+  font-size: 14px;
+  color: #36466b;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .digits {
+    font-size: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+}

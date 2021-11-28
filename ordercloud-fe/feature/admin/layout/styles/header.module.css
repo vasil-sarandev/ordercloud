@@ -1,0 +1,44 @@
+.header {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  height: 70px;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: #f9f9f9;
+}
+.left {
+  margin-right: 40px;
+}
+.right {
+  display: flex;
+  flex: 1;
+}
+.logo a {
+  display: block;
+}
+.logo img {
+  height: 30px;
+  display: block;
+}
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.inner-header > div {
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .header {
+    height: 70px;
+    padding: 0px 10px;
+  }
+  .logo img {
+    height: 25px;
+    min-width: unset;
+  }
+}

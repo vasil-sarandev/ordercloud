@@ -1,0 +1,40 @@
+.container {
+  border-top: var(--border-default);
+  background: #f2f2f2;
+  padding: 40px 10px;
+}
+.credits {
+  text-align: center;
+  color: var(--font-secondary2);
+  margin-bottom: var(--gutter);
+  display: flex;
+  justify-content: center;
+}
+.credits a {
+  color: var(--font-secondary2);
+  margin-left: 5px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+}
+.links div a {
+  color: var(--font-secondary2);
+}
+.links > div:not(:last-child) {
+  margin-right: var(--gutter);
+}
+
+@media screen and (max-width: 768px) {
+  .credits {
+    margin-bottom: 10px;
+  }
+  .links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .links > div:not(:last-child) {
+    margin-right: unset;
+    margin-bottom: 10px;
+  }
+}

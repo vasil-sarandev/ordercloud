@@ -1,0 +1,45 @@
+.layoutContainer {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  flex: 1;
+}
+.layoutContainer.restrict .layoutMain {
+  max-width: var(--restrict-width);
+}
+.layoutMain,
+.motionDiv {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.layoutMain {
+  margin: 0 auto;
+  padding: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+}
+.contentHeader {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.pageTitle {
+  font-size: 13px;
+  margin-right: 15px;
+  color: var(--cyan);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .layoutMain {
+    padding: 25px 10px;
+  }
+}
